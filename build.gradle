@@ -1,0 +1,27 @@
+group = 'com.narus_1s'
+version = '0.0.1-SNAPSHOT'
+
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+//------------------------------------------------------------------------------------------------------------------------
+//    Tasks - Application
+//------------------------------------------------------------------------------------------------------------------------
+
+task bootFullApplication(type: GradleBuild) {
+    group 'application'
+    setTasks([':client:npmUpdate', ':client:clean', ':client:buildClientToSpring', ':backend:bootRun'])
+}
+
+//------------------------------------------------------------------------------------------------------------------------
+//    Tasks - Init project
+//------------------------------------------------------------------------------------------------------------------------
+
+//task wrapper(type: Wrapper) {
+//    group 'init'
+//    gradleVersion '5.1'
+//    distributionType Wrapper.DistributionType.ALL
+//}

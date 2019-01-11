@@ -1,0 +1,3 @@
+rootProject.name = 'web_1с_admin'
+
+include 'server', 'web_ui'

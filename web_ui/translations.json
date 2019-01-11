@@ -1,0 +1,10 @@
+{
+  "src/components/HelloI18n.vue": {
+    "en": {
+      "hello": "Hello i18n in SFC!"
+    },
+    "ru": {
+      "hello": "Приветы!"
+    }
+  }
+}
